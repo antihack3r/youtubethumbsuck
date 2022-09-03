@@ -7,9 +7,11 @@ if "/watch?v=" not in youtubelink:
 if "&" not in youtubelink:
 	x = re.findall("/watch[?]v=(.*)",youtubelink)
 	print("Your image link is https://i.ytimg.com/vi/"+x[0]+"/maxresdefault.jpg")
+	print("                   https://i.ytimg.com/vi/"+x[0]+"/hqdefault.jpg")
 	raise SystemExit
 x = re.findall("/watch[?]v=(.*)&",youtubelink)
 print("Your image link is https://i.ytimg.com/vi/"+x[0]+"/maxresdefault.jpg")
+print("                   https://i.ytimg.com/vi/"+x[0]+"/hqdefault.jpg")
 
 # How this works:
 # You have youtube.com/watch?v=SMTHING link
